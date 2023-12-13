@@ -1,0 +1,10 @@
+{
+  "parser": "babel-ts",
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "printWidth": 120,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "trailingComma": "all"
+}

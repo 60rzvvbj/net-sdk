@@ -1,0 +1,17 @@
+{
+  "name": "net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
