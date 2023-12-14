@@ -1,5 +1,5 @@
-import { Computer } from './Computer';
-import { NetworkCable, NetworkCableEnd } from './NetworkCable';
+import { Computer } from './equipment/Computer';
+import { NetworkCable, NetworkCableEnd } from './equipment/NetworkCable';
 
 export function test() {
   console.log('DEBUG: ', 'start');
