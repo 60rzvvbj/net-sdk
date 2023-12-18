@@ -1,2 +1,2 @@
-import { test } from './stage2/main';
+import { test } from './stage3/main';
 test();

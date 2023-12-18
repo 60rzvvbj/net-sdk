@@ -1,0 +1,6 @@
+- 重构网线网口，使其更合理，移除对 TimeLine 的依赖
+- 增加 messageController 与插件机制
+- 增加曼彻斯特编码
+- 增加 CSMACD 冲突检测协议
+- 增加 CRC 循环冗余检验
+- 支持 UTF8 编码
