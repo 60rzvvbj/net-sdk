@@ -71,7 +71,6 @@ export class BiteFilling implements MessageControllerPlugin {
         index = 0;
       }
     }
-    console.log('DEBUG: ', '比特填充解析失败');
     return null;
   }
 }

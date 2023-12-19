@@ -63,7 +63,8 @@ export class MessageController {
   }
 
   private async csmacdSend(data: NetData[], key: number): Promise<void> {
-    let pre = [0, 0, 0, 0, 0, 0, 0, 0];
+    let len = Math.floor(Math.random() * 20 + 5) * 2;
+    let pre = new Array(len).fill(0);
     let now = 0;
 
     // 先听再发
@@ -83,7 +84,6 @@ export class MessageController {
 
     // 边听边发
     for (let i = 0; i < data.length; i++) {
-      const d = data[i];
       const res = await this.port.sendData(data[i]);
       if (!res) {
         // 冲突停止
@@ -100,7 +100,7 @@ export class MessageController {
       }
 
       // 随机等待一段时间
-      const random = Math.floor(Math.random() * 50 + 30);
+      const random = Math.floor(Math.random() * 150 + 30);
       for (let i = 0; i < random; i++) {
         await this.port.getData();
       }
