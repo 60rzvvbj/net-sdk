@@ -29,7 +29,7 @@ export class MessageController {
     this.listen();
   }
 
-  listen() {
+  private listen() {
     const lastPlugin = this.plugins[this.plugins.length - 1] as LastMessageControllerPlugin;
     lastPlugin.listenMessage(this.port, data => {
       let netData: NetData[] | null = data;
